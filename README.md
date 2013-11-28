@@ -1,9 +1,8 @@
 pomelo-data-plugin
-======================
 
 Config data plugin for Pomelo, it can be used in Pomelo(>=0.7.4).
 
-pomelo-data-plugin is a config data plugin for Pomelo.
+pomelo-data-plugin is a config data plugin for Pomelo(a fast, scalable,distributed game server framework for Node.js  http://pomelo.netease.com).
 
 ##Installation
 
@@ -22,4 +21,3 @@ app.configure('production|development', function() {
   });
 });
 ```
-
