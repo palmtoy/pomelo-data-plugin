@@ -1,0 +1,8 @@
+{
+  "name": "pomelo-data-plugin",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "pomelo-logger": "0.1.1"
+  }
+}
