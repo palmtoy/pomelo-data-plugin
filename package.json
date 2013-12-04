@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "pomelo-logger": "0.1.1"
-    , "JSONStream": "0.7.1"
     , "csv": "0.3.6"
   }
 }
