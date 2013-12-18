@@ -33,3 +33,5 @@ var npcTalkConf = app.get('dataService').get('npc_talk');
 ... ...
 ```
 
+Please refer to [pomelo-data-plugin-demo](https://github.com/NetEase/pomelo-data-plugin-demo).
+
