@@ -49,4 +49,4 @@ Add typeRow config.This config indicate which row the field type is in(using for
 
 Add indexColumn config.This config indicate which column is using for index. If indexColumn configed,then the idx config will be no effect.
 
-node: row and column are all start from 1
+note: row and column are all start from 1
