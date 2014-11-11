@@ -21,7 +21,11 @@ app.configure('production|development', function() {
     watcher: {
       dir: __dirname + '/config/data',
       idx: 'id',
-      interval: 3000
+      interval: 3000,
+      ignoreRows:[2,4],
+      nameRow:1,
+      typeRow:3,
+      indexColumn:0
     }
   });
   ...
@@ -35,3 +39,14 @@ var npcTalkConf = app.get('dataService').get('npc_talk');
 
 Please refer to [pomelo-data-plugin-demo](https://github.com/palmtoy/pomelo-data-plugin-demo)
 
+##ChangeLog
+
+Add ignoreRows config.This is a array that contain row nums indicate which row will be ignored when parsing the csv file.
+
+Add nameRow config.This config indicate which row the field name is in.
+
+Add typeRow config.This config indicate which row the field type is in(using for type-cast,saving you from manual type-cast).
+
+Add indexColumn config.This config indicate which column is using for index. If indexColumn configed,then the idx config will be no effect.
+
+node: row and column are all start from 1
