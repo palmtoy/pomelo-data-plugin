@@ -1,13 +1,13 @@
-pomelo-data-plugin
+pomelo-data-plugin-ex
 
 Config data plugin for Pomelo(a fast,scalable,distributed game server framework for Node.js. http://pomelo.netease.com), it can be used in Pomelo(>=0.7.0).
 
-pomelo-data-plugin is a config data(.csv) plugin for Pomelo. pomelo-data-plugin can watch all config files in the given dir and reload the file automatically when it is modified.
+pomelo-data-plugin-ex is a config data(.csv) plugin for Pomelo. pomelo-data-plugin-ex can watch all config files in the given dir and reload the file automatically when it is modified.
 
 ##Installation
 
 ```
-npm install pomelo-data-plugin
+npm install pomelo-data-plugin-ex
 ```
 
 ##Usage
@@ -37,7 +37,7 @@ heroInitConf = app.get('dataService').get('Heroinit');
 ... ...
 ```
 
-Please refer to [pomelo-data-plugin-demo](https://github.com/jackiesun8/pomelo-data-plugin-demo)
+Please refer to [pomelo-data-plugin-ex-demo](https://github.com/jackiesun8/pomelo-data-plugin-ex-demo)
 
 ##ChangeLog
 
