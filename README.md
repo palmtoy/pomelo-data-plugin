@@ -13,7 +13,7 @@ npm install pomelo-data-plugin
 ##Usage
 
 ```
-var dataPlugin = require('pomelo-data-plugin');
+var dataPlugin = require('pomelo-data-plugin-ex');
 ... ...
 app.configure('production|development', function() {
   ...
@@ -32,12 +32,12 @@ app.configure('production|development', function() {
 });
 ... ...
 ... ...
-var npcTalkConf = app.get('dataService').get('npc_talk');
+heroInitConf = app.get('dataService').get('Heroinit');
 ... ...
 ... ...
 ```
 
-Please refer to [pomelo-data-plugin-demo](https://github.com/palmtoy/pomelo-data-plugin-demo)
+Please refer to [pomelo-data-plugin-demo](https://github.com/jackiesun8/pomelo-data-plugin-demo)
 
 ##ChangeLog
 
