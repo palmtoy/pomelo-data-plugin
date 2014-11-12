@@ -41,24 +41,24 @@ Please refer to [pomelo-data-plugin-demo](https://github.com/palmtoy/pomelo-data
 
 ##ChangeLog
 
-###Add ignoreRows config
+###Add ignoreRows config(optional)
 This is a array that contain row nums indicate which row will be ignored when parsing the csv file.
 
-###Add nameRow config
+###Add nameRow config(necessary)
 This config indicate which row the field name is in.
 
-###Add typeRow config
+###Add typeRow config(necessary)
 This config indicate which row the field type is in(using for type-cast,saving you from manual type-cast).
 
 ####type support:
 int,float,string,bool,ts(timestamp),int[](delimeter is ',')
 
-###Add indexColumn config
+###Add indexColumn config(optional)
 This config indicate which column is using for index. If indexColumn configed,then the idx config will be no effect.
 
 note: row and column are all start from 1
 
 ###Add a new method:findByFunc(func) 
-Use this method,you can define a testing function and pass to findByFunc and will get a record that satisfies the conditions defined in testing function 
+Use this method,you can define a testing function and pass it to findByFunc and will get a record that satisfies the conditions defined in testing function 
 
-
+note:may be some bug, welcome raise an issue.
