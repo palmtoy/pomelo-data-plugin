@@ -19,13 +19,13 @@ app.configure('production|development', function() {
   ...
   app.use(dataPlugin, {
     watcher: {
-      dir: __dirname + '/config/data',
-      idx: 'id',
-      interval: 3000,
-      ignoreRows:[2,4],
-      nameRow:1,
-      typeRow:3,
-      indexColumn:0
+        dir: __dirname + '/config/data',
+        idx: 'id',
+        interval: 3000,
+        nameRow: 1,
+        typeRow: 3,
+        ignoreRows: [2, 4],
+        indexColumn: 1
     }
   });
   ...
@@ -41,12 +41,24 @@ Please refer to [pomelo-data-plugin-demo](https://github.com/palmtoy/pomelo-data
 
 ##ChangeLog
 
-Add ignoreRows config.This is a array that contain row nums indicate which row will be ignored when parsing the csv file.
+###Add ignoreRows config
+This is a array that contain row nums indicate which row will be ignored when parsing the csv file.
 
-Add nameRow config.This config indicate which row the field name is in.
+###Add nameRow config
+This config indicate which row the field name is in.
 
-Add typeRow config.This config indicate which row the field type is in(using for type-cast,saving you from manual type-cast).
+###Add typeRow config
+This config indicate which row the field type is in(using for type-cast,saving you from manual type-cast).
 
-Add indexColumn config.This config indicate which column is using for index. If indexColumn configed,then the idx config will be no effect.
+####type support:
+int,float,string,bool,ts(timestamp),int[](delimeter is ',')
+
+###Add indexColumn config
+This config indicate which column is using for index. If indexColumn configed,then the idx config will be no effect.
 
 note: row and column are all start from 1
+
+###Add a new method:findByFunc(func) 
+Use this method,you can define a testing function and pass to findByFunc and will get a record that satisfies the conditions defined in testing function 
+
+
