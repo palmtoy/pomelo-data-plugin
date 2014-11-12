@@ -51,7 +51,7 @@ This config indicate which row the field name is in.
 This config indicate which row the field type is in(using for type-cast,saving you from manual type-cast).
 
 ####type support:
-int,float,string,bool,ts(timestamp),int[](delimeter is ',')
+int,float,string,bool,ts(timestamp),int[ ](delimeter is ',')
 
 ###Add indexColumn config(optional)
 This config indicate which column is using for index. If indexColumn configed,then the idx config will be no effect.
